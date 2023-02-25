@@ -1,0 +1,19 @@
+#Code for a simple calculator
+def cal(num1, num2, op):
+    if op == "+":
+        print("Addition of", num1, ",", num2, "is:", (num1 + num2) )
+    elif op == "-":
+        print("Subtraction of", num1, ",", num2, "is:", (num1 - num2) )
+    elif op == "/":
+        print("Division of", num1, ",", num2, "is:", (num1 / num2) )
+    elif op == "*":
+        print("Multiplication of", num1, ",", num2, "is:", (num1 * num2) )
+    else:
+        print("Invalid Operator")
+
+num1=float(input("Please enter first number: " ))
+op=input("Please enter operator: " )
+num2=float(input("Please enter second number: " ))
+
+#Calling the function
+cal(num1, num2, op)
